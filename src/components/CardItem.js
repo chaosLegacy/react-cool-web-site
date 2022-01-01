@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Flip } from 'react-reveal';
+import { Fade } from 'react-reveal';
 
 
 const CardItem = ({
@@ -10,7 +10,7 @@ const CardItem = ({
     path
 }) => {
     return (
-        <Flip left>
+        <Fade bottom>
             <li className="cards__item">
                 <Link to={path} className='cards__item__link' >
                     <figure className="cards__item__pic-wrap" data-category={label}>
@@ -21,7 +21,7 @@ const CardItem = ({
                     </div>
                 </Link>
             </li>
-        </Flip>
+        </Fade>
     )
 }
 
